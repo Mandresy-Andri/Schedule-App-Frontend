@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Anudi";
+  src: local("Anudi"), url("./fonts/Chalkduster/FrederickatheGreat-Regular.ttf") format("truetype");
+}
+
+.schedule-container {
+  background-image: url('./img/class1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 41em;
+}
+
+.schedule-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.schedule-container table {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Anudi";
+
+  background-image: url('./img/chalkboard.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.schedule-container th,
+.schedule-container td {
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+
+.schedule-container th {
+  background-color: #666;
+  font-weight: normal;
+}
+
+.schedule-container td {
+  position: relative;
+  border-bottom: 1px solid #666;
+}
+
+.schedule-container td:last-child {
+  border-bottom: none;
+}
+
+.schedule-container .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  min-width: 200px;
+  padding: 10px;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-container .dropdown-item-text {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.schedule-container .dropdown-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.schedule-container .add-event-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.schedule-container .add-event-button:hover {
+  background-color: white;
+  color: #212529;
+}
+
+.schedule-container .add-event-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #212529;
+}
+
+
+.chalkboard {
+  background-image: url('./img/wall.jpg');
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.animated-text {
+  color: white;
+  font-size: 3rem;
+  font-family: Anudi;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  margin-left: 6em;
+  letter-spacing: .15em;
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: typing 3s steps(40, end) 2s forwards;
+} 
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 0; /* Start with opacity at 0 */
+  }
+  to {
+    width: 100%;
+    opacity: 1; /* Increase opacity to 1 as animation runs */
+  }
+}
+
+.ant-tooltip {
+  top: 195px !important;
+}
+
+
