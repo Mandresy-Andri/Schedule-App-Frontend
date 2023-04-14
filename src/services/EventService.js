@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const EVENT_URL='http://localhost:8080/events/weekly'
+const EVENT_URL='https://schedule-app-mandresy.onrender.com/events/weekly'
 
 const EventService = {
     async getEventsCurrentWeek() {
@@ -15,7 +15,7 @@ const EventService = {
 
     async addEvent(formData) {
         try {
-            const response = await axios.post("http://localhost:8080/events",formData);
+            const response = await axios.post("https://schedule-app-mandresy.onrender.com/events",formData);
             return response.data;
         }
         catch (error) {
@@ -25,7 +25,7 @@ const EventService = {
 
     async editEvent(formData,id) {
         try {
-            const response = await axios.put("http://localhost:8080/events/"+id,formData);
+            const response = await axios.put("https://schedule-app-mandresy.onrender.com/events/"+id,formData);
             return response.data;
         }
         catch (error) {
@@ -35,7 +35,7 @@ const EventService = {
 
     async deleteEvent(id) {
         try {
-            const response = await axios.delete("http://localhost:8080/events/"+id);
+            const response = await axios.delete("https://schedule-app-mandresy.onrender.com/events/"+id);
             return response.data;
         }
         catch (error) {

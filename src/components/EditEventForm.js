@@ -43,7 +43,7 @@ const EditEventForm = ({ event }) => {
       ...values,
       startTime: dayjs.utc(values.startTime).format('HH:mm:ss'),
       endTime: dayjs.utc(values.endTime).format('HH:mm:ss'),
-      eventDate: dayjs(values.eventDate).add(1, 'day').format('YYYY-MM-DD') //because of timezone conversion that I don't get yet, I add one day so I keep the input date
+      eventDate: dayjs(values.eventDate).format('YYYY-MM-DD')
     };
     EventService.editEvent(formattedValues,event.id)
       .then(response => {

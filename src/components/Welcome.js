@@ -13,7 +13,7 @@ export default class Welcome extends Component {
               </div>
                    
               <div className="door-container">
-              <Tooltip title="Click on me to enter room" overlayStyle={{ opacity: 0.8 }} open>   
+              <Tooltip title="Click on me to enter room" overlayStyle={{ opacity: 0.5 }} open>   
                     <a href="event">
                       <img
                         src={Door}
