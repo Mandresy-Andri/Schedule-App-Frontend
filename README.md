@@ -19,4 +19,4 @@ Upon entering the page, all the events of the current week are  loaded on a sche
 ## Executing program
 
 ---
-* The fully working application can be accessed at this url: 
+* The fully working application can be accessed at this url: https://schedule-app-frontend.onrender.com
